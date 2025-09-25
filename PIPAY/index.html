@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Clarence Jompilla">
+    <title>Matthew Jompilla - Portfolio | Computer Science Student</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="view/styles/styles.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home" aria-label="Go to home section">
+                <img src="view/assets/lobo.png" class="navbar-logo" alt="Matthew Jompilla Logo">
+            </a>
+            <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+            <label for="navbar-toggle" class="navbar-toggler" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+
+            <div class="navbar-menu" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#edu">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section -->
+    <section id="home" class="home-section">
+        <div class="left-home">
+            <div class="hero-container">
+                <h1 class="hero-headline-home">
+                    <span class="line">EVERYTHING</span>
+                    <span class="line">WE TOUCH TURNS TO</span>
+                    <span class="line text-gold">GOLD</span>
+                </h1>
+                <div class="btn-container">
+                    <button class="about-me" onclick="location.href='#about'" aria-label="to about">
+                        ABOUT ME
+                    </button>
+                    <button class="contacts" onclick="location.href='#contacts'" aria-label="to contacts">
+                        CONTACTS
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right-home">
+            <div class="pfp" role="img" aria-label="pfp"></div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-section">
+        <div class="left-about">
+            <div class="pfp-about" role="img" aria-label="pfp-about"></div>
+        </div>
+        <div class="right-about">
+            <h1 class="fullname-hero">
+                <p>MATTHEW CLARENCE</p>
+                <p>JOMPILLA</p>
+            </h1>
+            <div class="container-about">
+
+                <h6 class="subtitle">I'm a Bachelor of Science in Computer Science student at National University –
+                    Laguna, where I've consistently excelled academically, earning Dean’s List recognition for three
+                    terms. My technical foundation includes hands-on experience with Java, C++, HTML, CSS, MySQL, and
+                    Scratch, with a strong passion for game, web, and application development.
+                    <br><br>
+                    Beyond coding, I thrive in collaborative and communicative environments. I have embraced
+                    opportunities to engage with audiences through public speaking and event hosting. These skills led
+                    to my recognition as the official ambassador of my department. These experiences have helped me
+                    build confidence, leadership, and the ability to connect with diverse groups of people.
+                </h6>
+            </div>
+        </div>
+    </section>
+
+    <!-- education section -->
+    <section id="edu" class="edu-section">
+        <div class="left-edu">
+            <div class="edu-pic" role="img"></div>
+        </div>
+        <div class="right-edu">
+            <div id="college" class="container-edu">
+                <h5>National University – Laguna</h5>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>KM 53 Pan-Philippine Hwy, Calamba, 4027 Laguna</p>
+                <p>2023 - 2027</p>
+            </div>
+            <div id="shs" class="container-edu">
+                <h5>National University – Laguna</h5>
+                <p>Senior High School (STEM)</p>
+                <p>KM 53 Pan-Philippine Hwy, Calamba, 4027 Laguna</p>
+                <p>2021 - 2023</p>
+            </div>
+            <div id="secondary" class="container-edu">
+                <h5>Emmanuel Christian School</h5>
+                <p>Junior High School</p>
+                <p>Malitlit, City of Santa Rosa, Laguna</p>
+                <p>2017 - 2021</p>
+            </div>
+            <div id="primary" class="container-edu">
+                <h5>Emmanuel Christian School</h5>
+                <p>Primary and Secondary School</p>
+                <p>Malitlit, City of Santa Rosa, Laguna</p>
+                <p>2011 - 2017</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects" class="proj-section">
+        <div class="proj-title">
+            <span>Hover my projects</span>
+        </div>
+
+        <div class="top-proj">
+            <div class="proj-container flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="view/assets/nuquest.png" alt="NuQuest" class="proj-img" loading="lazy">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>NuQuest</h3>
+                        <p>NU Quest is a single-player dungeon escape game in which players take on the challenges of
+                            college life as if they were trapped in an academic dungeon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-container flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="view/assets/NUX.png" alt="NUX" class="proj-img" loading="lazy">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>NUX Project</h3>
+                        <p>NU Exchange is a full-stack website built with PHP, HTML, and CSS, designed to make the NU
+                            Exchange platform accessible online. It enhances convenience for students by extending its
+                            availability beyond selected NU branches.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-container flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="view/assets/T.R.A.D.E.png" alt="T.R.A.D.E" class="proj-img" loading="lazy">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>T.R.A.D.E</h3>
+                        <p>TRADE or (Tampered Receipt AI Detection for E-Transactions), is a system which aims to stop
+                            digital payment fraud and boost trust in online transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot-proj">
+            <div class="proj-container flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="view/assets/CodeExplorer.png" alt="CodeExp" class="proj-img" loading="lazy">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Code Explorer</h3>
+                        <p>Code Explorer is a single-player action platformer game that entertains while teaching the
+                            fundamental aspects of coding. The game is simple: finish off each level's objective to
+                            advance
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-container flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="view/assets/RemindARF!.png" alt="RemindARF" class="proj-img" loading="lazy">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>RemindARF!</h3>
+                        <p>RemindARF! is a community-based productivity app for the NU community (students, faculty, and
+                            staff). It helps students stay organized and engaged by providing reminders and task
+                            management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proj-container flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="view/assets/BAYBAYIN.png" alt="BAYBAYIN" class="proj-img" loading="lazy">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>BAYBAYIN</h3>
+                        <p>Baybayin is a fun and impactful action game where players punch trash to clean up a polluted
+                            shore. Designed to raise awareness about marine pollution, it supports SDG 14: Life Below
+                            Water by turning gameplay into environmental action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-title">
+            <span>Skills</span>
+        </div>
+        <div class="top-skills">
+            <div class="skills-container">
+                <img src="view/assets/html-5.png" alt="html" class="skills-img" loading="lazy">
+            </div>
+            <div class="skills-container">
+                <img src="view/assets/css-3.png" alt="css" class="skills-img" loading="lazy">
+            </div>
+            <div class="skills-container">
+                <img src="view/assets/java.png" alt="java" class="skills-img" loading="lazy">
+            </div>
+            <div class="skills-container">
+                <img src="view/assets/database.png" alt="database" class="skills-img" loading="lazy">
+            </div>
+        </div>
+        <div class="bot-skills">
+            <div class="skills-container">
+                <img src="view/assets/github.png" alt="github" class="skills-img" loading="lazy">
+            </div>
+            <div class="skills-container">
+                <img src="view/assets/python.png" alt="python" class="skills-img" loading="lazy">
+            </div>
+            <div class="skills-container">
+                <img src="view/assets/scratch.png" alt="scratch" class="skills-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- contacts section -->
+    <section id="contacts" class="contact-section">
+        <div class="top-contact">
+            <div class="contacts-title">
+                <span>Contacts</span>
+            </div>
+        </div>
+        <div class="bot-contact">
+            <div class="contact-container">
+                <img src="view/assets/facebook.png"
+                    onclick="window.open('https://facebook.com/matthew.jompilla/', '_blank')" alt="fb"
+                    class="contact-img" loading="lazy">
+            </div>
+            <div class="contact-container">
+                <img src="view/assets/instagram.png"
+                    onclick="window.open('https://instagram.com/jompi_dompi/', '_blank')" alt="ig" class="contact-img"
+                    loading="lazy">
+            </div>
+            <div class="contact-container">
+                <img src="view/assets/github.png" onclick="window.open('https://github.com/j0mpi', '_blank')"
+                    alt="github" class="contact-img" loading="lazy">
+            </div>
+            <div class="contact-container">
+                <img src="view/assets/linkedin.png"
+                    onclick="window.open('https://linkedin.com/in/matthew-clarence-jompilla-b55730287/', '_blank')"
+                    alt="linkedin" class="contact-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
