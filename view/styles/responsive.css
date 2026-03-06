@@ -1,0 +1,367 @@
+/* ============================================================
+   RESPONSIVE.CSS — Portfolio Breakpoints
+   ============================================================
+   Breakpoints:
+     Mobile  : max-width 480px
+     Tablet  : 481px – 768px
+     PC      : 769px and above (base styles in styles.css)
+   ============================================================ */
+
+
+/* ============================================================
+   MOBILE  ≤ 480px
+   ============================================================ */
+@media (max-width: 480px) {
+
+    /* --- Navbar --- */
+    .navbar {
+        height: auto;
+        padding: 8px 0;
+        margin: 0% 0%;
+    }
+
+    .navbar-brand img {
+        margin-left: 0.5em;
+    }
+
+    a.nav-link {
+        font-size: 1em !important;
+    }
+
+    /* --- Sections (stack vertically, auto height) --- */
+    .home-section,
+    .about-section,
+    .edu-section {
+        flex-direction: column;
+        height: auto;
+        margin: 5%;
+        padding-top: 20%;
+        align-items: center;
+    }
+
+    .proj-section,
+    .skills-section,
+    .contact-section {
+        height: auto;
+        margin: 5%;
+    }
+
+    /* --- Home --- */
+    .left-home,
+    .right-home {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .hero-headline-home .line:nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    .hero-headline-home .line:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .hero-headline-home .line:nth-child(3) {
+        font-size: 3rem;
+    }
+
+    .pfp {
+        width: 220px;
+        height: 220px;
+        margin: 20px 0;
+    }
+
+    .btn-container {
+        gap: 15px;
+    }
+
+    .btn-container button {
+        width: 140px;
+        height: 48px;
+        font-size: 0.85em;
+    }
+
+    /* --- About --- */
+    .left-about,
+    .right-about {
+        width: 100%;
+    }
+
+    .pfp-about {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .right-about h1 {
+        font-size: 1.6rem;
+    }
+
+    .container-about {
+        width: 95%;
+    }
+
+    .right-about .container-about h6 {
+        font-size: 1rem;
+    }
+
+    /* --- Education --- */
+    .left-edu,
+    .right-edu {
+        width: 100%;
+    }
+
+    .edu-pic {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    .right-edu {
+        margin-top: 0;
+    }
+
+    .container-edu {
+        width: 95%;
+        text-align: center;
+    }
+
+    .container-edu h5 {
+        font-size: 1.1em;
+    }
+
+    /* --- Projects --- */
+    .proj-section {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .proj-title {
+        margin-top: 12%;
+    }
+
+    .top-proj,
+    .bot-proj {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .proj-container.flip-card {
+        width: 85vw;
+        height: 280px;
+        margin: 0;
+    }
+
+    /* --- Skills --- */
+    .skills-title {
+        margin-top: 12%;
+    }
+
+    .top-skills,
+    .bot-skills {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .skills-container {
+        margin: 0.5em;
+        border-radius: 50px;
+    }
+
+    .skills-img {
+        width: 100px;
+        height: 90px;
+    }
+
+    /* --- Contacts --- */
+    .top-contact {
+        margin-top: 12%;
+    }
+
+    .bot-contact {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+        margin-bottom: 5%;
+    }
+
+    .contact-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+/* ============================================================
+   TABLET  481px – 768px
+   ============================================================ */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* --- Navbar --- */
+    .navbar {
+        height: auto;
+    }
+
+    a.nav-link {
+        font-size: 1.1em !important;
+    }
+
+    /* --- Sections --- */
+    .home-section,
+    .about-section,
+    .edu-section {
+        flex-direction: column;
+        height: auto;
+        margin: 10% 6% 4%;
+        padding-top: 15%;
+        align-items: center;
+    }
+
+    .proj-section,
+    .skills-section,
+    .contact-section {
+        height: auto;
+        margin: 4% 6%;
+    }
+
+    /* --- Home --- */
+    .left-home,
+    .right-home {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-headline-home .line:nth-child(1) {
+        font-size: 3.5rem;
+    }
+
+    .hero-headline-home .line:nth-child(2) {
+        font-size: 2.2rem;
+    }
+
+    .hero-headline-home .line:nth-child(3) {
+        font-size: 4.5rem;
+    }
+
+    .pfp {
+        width: 280px;
+        height: 280px;
+        margin: 20px 0;
+    }
+
+    .btn-container button {
+        width: 160px;
+        height: 52px;
+    }
+
+    /* --- About --- */
+    .left-about,
+    .right-about {
+        width: 100%;
+    }
+
+    .pfp-about {
+        width: 260px;
+        height: 260px;
+        margin-bottom: 15px;
+    }
+
+    .right-about h1 {
+        font-size: 2rem;
+    }
+
+    .container-about {
+        width: 90%;
+    }
+
+    /* --- Education --- */
+    .left-edu,
+    .right-edu {
+        width: 100%;
+    }
+
+    .edu-pic {
+        width: 260px;
+        height: 260px;
+        margin-bottom: 15px;
+    }
+
+    .right-edu {
+        margin-top: 0;
+    }
+
+    .container-edu {
+        width: 85%;
+    }
+
+    /* --- Projects --- */
+    .proj-title {
+        margin-top: 10%;
+    }
+
+    .top-proj,
+    .bot-proj {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .proj-container.flip-card {
+        width: 280px;
+        height: 260px;
+        margin: 8px;
+    }
+
+    /* --- Skills --- */
+    .skills-title {
+        margin-top: 10%;
+    }
+
+    .top-skills,
+    .bot-skills {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+
+    .skills-img {
+        width: 160px;
+        height: 150px;
+    }
+
+    /* --- Contacts --- */
+    .top-contact {
+        margin-top: 10%;
+    }
+
+    .bot-contact {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 20px;
+        margin-bottom: 6%;
+    }
+
+    .contact-img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+/* ============================================================
+   PC / DESKTOP  ≥ 769px
+   (base styles already in styles.css — add overrides here)
+   ============================================================ */
+@media (min-width: 769px) {
+
+    /* Intentionally light — styles.css handles the desktop layout.
+       Add desktop-specific overrides below as needed. */
+
+}
